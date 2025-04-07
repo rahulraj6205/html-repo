@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xyz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        .navbar{
+        height: 60px;
+        background-color: #0f1111;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 18px;
+        
+        }
+        .border{
+        border: 1.5px solid transparent;
+        }
+        .border:hover{
+        border: 1.5px solid white;
+        }
+        .nav-box1{
+            /* display: block; */
+            /* font-size: 1rem; */
+            /* margin-left: 50px; */
+        }
+        .nav-box2{
+            /* font-size: 1rem ; */
+        }
+        
+        /**box3**/
+        .nav-search{
+            display: flex;
+            justify-content: space-evenly;
+            background-color: pink;
+            width: 620px;
+            height: 40px;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+        }
+        .search-select{
+            background-color: #f3f3f3;
+            width: 50px;
+            text-align: center;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            border: none;
+        }
+        .search-input{
+            width: 100%;
+            font-size: 1 rem;
+            border: none;
+        }
+        .search-icon{
+            width:45px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            font-size: 1.2rem;
+            background-color: #febd68;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            color: #0f1111;
+        }
+        .nav-search:hover{
+            border: 2px solid #febd68;
+        }
+
+        /** box 4**/
+        .payment{
+            color: white;
+            /* font-size: 20px; */
+        }
+        /** box4 **/
+        /* span{
+            font-size: 0.7rem;
+        } */
+
+         /**box 5**/
+        /* .nav-second {
+            font-size: 0.85rem;
+            font-weight: 700;
+        } */
+
+        /**hero section*/
+        .hero-section{
+            height: 500px;
+            width: 100%;
+            background-color: rgb(215, 208, 221);
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            /* justify-content:center;
+            align-items: center; */
+            }
+        .box{
+            display: flex;
+            align-items: center;
+            height: 40px;
+            width: 225px;
+            border-bottom: 0.2px solid black;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        /**hero content**/ 
+        .hero-content {
+            height: 450px;
+            width: 400px;
+            border: 3px solid black;
+            border-radius: 10%;
+            background-color: rgb(117, 122, 122);
+            display: flex;
+            /* flex-direction: row;
+            justify-content: center;
+            background-image: url;
+            align-items: center; */
+            position:absolute;
+            right: 100px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            
+
+        }
+        .hero-registor{
+            background-color: pink;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            top: 10px;
+        }
+        .hero-content1{
+            height: 450px;
+            width: 400px;
+            border: 3px solid black;
+            border-radius: 10%;
+            background-color: rgb(117, 122, 122);
+            display: flex;
+            position:absolute;
+            left: 350px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+
+        }
+        .foot-panel1{
+                height: 100px;
+                width: 100%;
+                background-color: #131a22;
+                color: #dddd;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-box1 border">
+                <i class="fa-solid fa-bars"></i>
+                All 
+            </div>
+            <div class="nav-box2 border">
+                <i class="fa-solid fa-house"></i>
+                Home
+            </div>
+            <div class="nav-search">
+                <select class="search-select" >
+                    <option>All</option>
+                </select>
+                <input placeholder="Search Form " class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="payment border">
+                <a >Payment</a>
+            </div>
+            <div class="nav-singin border">
+                <p><span>Hello, sign in </span></p>
+                
+            </div>
+            <div class="nav-account border">
+                <p class="nav-second"> Account  <i class="fa-regular fa-user"></i> </p>
+            </div>
+        </div>
+    </header>
+    <div class="hero-section">
+        <a href="new-candidate.html" class="box">New Candidate</a>
+        <a href="course-reg.html" class="box"> Course Registration</a>
+        <a href="club-membership.html" class="box">Club Membership</a>
+        <a href="class-reg.html" class="box"> Class Registration</a>
+        <a href="collage-reg.html" class="box"> Collage Registration</a>
+        <a href="music-reg.html" class="box">Music School Registration</a>
+        <a href="school-reg.html" class="box">School Registration</a>
+        <a href="virtual-reg.html" class="box"> Virtual Event Registration</a>
+        <a href="comptetion-entry-reg.html" class="box">Competition Entry Form</a>
+        <a href="student-enroll.html" class="box ">Student Enrollement </a>
+        
+    
+        <div class="hero-content">
+            <form action="/action.php This page is  not found "></form>
+            <h3 style="text-align: center; "> Sing-in/Log-in</h3>
+            <!-- <div class="hero-registor">
+                box1
+            </div> -->
+        </div>
+        <div class="hero-content1">
+                <form action="/action.php This page is  not found ">  <!-- Action attributes is used to define what action need to be performed when a form is submited -->
+                        <h3 style="text-align: center; "> Register</h3>
+                        <input type="text"placeholder = " User Name "> 
+                        <input type="password" placeholder="password"> 
+                        <h4>Choose your class </h4>
+                    <label for="101">
+                        <input type="radio" value="Class XI" name="Class" id = " 101">Class XI 
+                    </label>
+                    <label for="102">
+                        <input type="radio" value=" Class XII " name="Class"  id="102">Class XII
+                    </label>
+                    <h4> Select your favaurit Subject </h4> 
+                    <label for="math">
+                        <input type="checkbox" value="math " name=" subject  " id="101">Math 
+                    </label> 
+                    <label for="physic">
+                        <input type="checkbox" value="physic " name=" subject  " id="102">Physic 
+                    </label>
+                    <label for="english ">
+                        <input type="checkbox" value="english  " name=" subject  " id="103">English 
+                    </label>
+                    <label for="CS">
+                        <input type="checkbox" value="CS" name=" subject  " id="104">CS 
+                    </label>
+                    <br><br>
+                    Select your city 
+                    <select name="city ">
+                        <option value="Delhi ">Delhi </option>
+                        <option value="Banglore "> Banglore </option>
+                        <option value="Pune ">Pune </option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="Kanpur ">Kanpur </option>
+                        <option value="Jaipur">Jaipur</option>
+                        <option value="Agra ">Agra </option>
+                        <option value="Patna ">Patna </option>
+                        <option value="other city">Other City </option>
+                    </select> 
+                    <br><br>
+                    <input type="submit" value="submit">
+                      
+     </form> 
+        </div>
+    </div>
+    <footer>
+        <div class="foot-panel1  ">
+                copyright 
+                <p>contact me :-rahulraj102003@gmail.com ,</p>
+        </div>
+    </footer>
+  
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    .reg-content{
+        height: 1843px;
+        width: 100%;
+        background-color: #bda6a6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: block ;
+        /* text-align: center; */
+    }
+    .reg-content header{
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        /* height: 152px;
+        font-size: 20px; */
+    }
+    .reg-app{
+        height: 1635px;
+        width: 750px;
+        background-color: white;
+        padding: 0px 38px;
+        /* margin: 50px 100px 50px 100px;
+        margin-top: 200px; */
+        margin-left: 250px;
+        /* margin-top: 30px; */
+    }
+    .reg-app header{
+       
+    }
+    input{
+        font-size: 18px;
+        /* margin-left: 20px; */
+    
+    }
+    border:hover{
+        border: 0.5px solid black;
+    }
+    h1{
+        /* margin-top: 40px; */
+        /* margin-left: 50px; */
+        padding-top: 20px;
+        
+    }
+    .select{
+        font-size: 20px;
+        display: block;
+    }
+    .box2{
+
+         /* display: block; */
+         display: flex;
+        /* justify-content: space-evenly;  */
+        flex-wrap: wrap;
+    }
+    #one{
+        margin-left: 10px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    .box3{
+        /* height: 100px;
+        width : 200px; */
+        display: flex;
+        /* position: relative;
+        right: 50px; */
+        border: 5 px solid black;
+        position: absolute;
+        right: 300px;
+        
+    }
+   </style>
+</head>
+<body>
+    <div class="reg-content">
+        <header>
+            <p style="font-size: 32px;">Registration Form  <br style="font-size: 16px;">  Fill out the form carefully for registration </p>
+            <!-- <a style="font-size: 16px;">Fill out the form carefully for registration</a> -->
+        </header>
+        <div class="reg-app">
+            <h5 style="margin-bottom: 20px;"> Student Name </h5>
+            <input type="text" placeholder="First Name" class="f-name border" >
+            <input type="text" placeholder="Middle Name">
+            <input type="text" placeholder="Last Name" class="l-name border">
+        
+        <div class="box2">
+            <h5>Birth Date</h5>
+            <select name="Month" id="one" style="font-size: 18px;">
+                <option value="jan">January</option>
+                <option value="feb">February</option>
+                <option value="march">March</option>
+                <option value="april">April</option>
+                <option value="june">June</option>
+                <option value="july">July</option>
+                <option value="aug">August</option>
+                <option value="sep">September</option>
+                <option value="oct">October</option>
+                <option value="nov">November</option>
+                <option value="dec">December</option>
+            </select>
+            <select name="Day" id="one" style="font-size: 18px;">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="1">6</option>
+                <option value="2">7</option>
+                <option value="3">8</option>
+                <option value="4">9</option>
+                <option value="5">10</option>
+                <option value="1">11</option>
+                <option value="2">12</option>
+                <option value="3">13</option>
+                <option value="4">14</option>
+                <option value="5">15</option>
+                <option value="1">16</option>
+                <option value="2">17</option>
+                <option value="3">18</option>
+                <option value="4">19</option>
+                <option value="5">20</option>
+                <option value="1">21</option>
+                <option value="2">22</option>
+                <option value="3">23</option>
+                <option value="4">24</option>
+                <option value="5">25</option>
+                <option value="1">26</option>
+                <option value="2">27</option>
+                <option value="3">28</option>
+                <option value="4">29</option>
+                <option value="5">30</option>
+                <option value="31">31</option>
+            </select>
+
+            <select name="Year" id="one" style="font-size: 18px;">
+                <option value="2025">2025</option>
+                <option value="2024">2024</option>
+                <option value="2025">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2025">2025</option>
+                <option value="2024">2024</option>
+                <option value="2025">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2025">2025</option>
+                <option value="2024">2024</option>
+                <option value="2025">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2025">2025</option>
+                <option value="2024">2024</option>
+                <option value="2025">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2025">2025</option>
+                <option value="2024">2024</option>
+                <option value="2025">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2025">2025</option>
+                <option value="2024">2024</option>
+                <option value="2025">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+            </select>
+       
+
+        <div class="box3">
+            <h1>Select Gender</h1>
+            <select name="gender" id="one" style="font-size: 18px;">
+                <option value="male">Male</option>
+                <option value="Female">Female</option>
+                <option value="na">N/A</option>
+            </select>
+        </div>
+    </div>
+
+
+    </div>
+
+    </div>reg-content
+    
+</body>
+</html>
