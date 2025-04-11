@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course-Reg</title>
+    <style>
+        .reg-course{
+            height: 1500px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(215, 208, 221);
+        }
+        .course-content{
+            height: 1050px;
+            width: 50%;
+            border: 3px solid black;
+            border-radius: 5%;
+            background-color: rgb(117, 122, 122);
+            margin-top: 20px;
+            display: block;
+            justify-content: center;
+            
+        }
+        .course-content input{
+            font-size: 20px;
+            color: rgb(40, 51, 155);
+            margin-left: 25px;
+            height: 30px;
+            border: 2px solid black ;
+            border-radius: 8%;
+        }
+        .course-content select{
+            font-size: 20px;
+            color: rgb(40, 51, 155);
+            margin-left: 25px;
+            height: 30px;
+            border: 2px solid black ;
+            border-radius: 8%;
+        }
+        h2{
+            margin-left: 25px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center; ">Course Registration Form </h1>
+        <p style="text-align: center;">  Fill out the form carefully for registration <hr> </p>
+    </header>
+    <form action="/action.php"> 
+    <div class="reg-course">
+        
+        <div class="course-content">
+            <h2 >Student Name</h2>
+            <input type="text" placeholder="First Name" class="f-name">
+            <input type="text" placeholder="Last Name" class="l-name">
+            <h2 style="margin-left: 20px;">Birth Date</h2>
+            <select name="Month" id="one" style="font-size: 18px;">
+                <option value="placeholder">Month</option>
+                <option value="jan">January</option>
+                <option value="feb">February</option>
+                <option value="march">March</option>
+                <option value="april">April</option>
+                <option value="june">June</option>
+                <option value="july">July</option>
+                <option value="aug">August</option>
+                <option value="sep">September</option>
+                <option value="oct">October</option>
+                <option value="nov">November</option>
+                <option value="dec">December</option>
+            </select>
+            <select name="Day" id="one" style="font-size: 18px;">
+                <option value="placeholder"> Day</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="1">6</option>
+                <option value="2">7</option>
+                <option value="3">8</option>
+                <option value="4">9</option>
+                <option value="5">10</option>
+                <option value="1">11</option>
+                <option value="2">12</option>
+                <option value="3">13</option>
+                <option value="4">14</option>
+                <option value="5">15</option>
+                <option value="1">16</option>
+                <option value="2">17</option>
+                <option value="3">18</option>
+                <option value="4">19</option>
+                <option value="5">20</option>
+                <option value="1">21</option>
+                <option value="2">22</option>
+                <option value="3">23</option>
+                <option value="4">24</option>
+                <option value="5">25</option>
+                <option value="1">26</option>
+                <option value="2">27</option>
+                <option value="3">28</option>
+                <option value="4">29</option>
+                <option value="5">30</option>
+                <option value="31">31</option>
+            </select>
+
+            <select name="Year" id="one" style="font-size: 18px;">
+                <option value="placeholder">Year</option>
+                <option value="2025">2025</option>
+                <option value="2024">2024</option>
+                <option value="2025">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2025">2025</option>
+                <option value="2024">2024</option>
+                <option value="2025">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2025">2025</option>
+                <option value="2024">2024</option>
+                <option value="2025">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2025">2025</option>
+                <option value="2024">2024</option>
+                <option value="2025">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2025">2025</option>
+                <option value="2024">2024</option>
+                <option value="2025">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2025">2025</option>
+                <option value="2024">2024</option>
+                <option value="2025">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+            </select>
+                <h2>Select Gender</h2>
+            <select name="gender" id="one" style="font-size: 18px; width: 200px; " >
+                <option value="placeholder"> please select </option>
+                <option value="male">Male</option>
+                <option value="Female">Female</option>
+                <option value="na">N/A</option> 
+            </select>
+                <h2>Address</h2>
+            <label for="101">
+                <input type="text" placeholder="Address" style=" width: 300px;"> 
+                <input type="text" placeholder="city" style="width: 100px;">
+                <input type="text" placeholder="State" style="width: 150px;">
+            </label>
+            <h2>Cource</h2>
+            <label for="">
+            <input type="text"placeholder="Cource">
+             </label>
+            <h2>Student E-mail </h2>
+            <label for="">
+                <input type="text" placeholder="ex: myname123@gmail.com" style="width: 300px;">
+            </label>
+            <h2>Mobile Number</h2>
+            <label for="">
+                <input type="mobile" placeholder="(000) 000-0000">
+            </label>
+            <h2>Parent Mobile Number</h2>
+            <label for="">
+                <input type="text" placeholder="(000) 000-0000">
+            </label>
+            <h2>Additional Comments</h2>
+            <textarea name="Feedback " id="101" placeholder="Add  your Additional Comments here " row 5 style="height: 50px; width: 300px; margin-left: 25px; border: 2px solid black; border-radius: 8%;" ></textarea>
+     <br><br>
+     <input type="submit" value="submit" style="height: 45px; width: 300px; text-align: center; background-color: #0f1111; color: #f3f3f3; margin-left: 170px; font-size: 20px ; border-radius: 10%;"  >
+        </div>
+    </div>
+    </form>
+</body>
+</html>

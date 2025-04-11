@@ -68,7 +68,9 @@
         .nav-search:hover{
             border: 2px solid #febd68;
         }
-
+        summit :hover{
+            border: 2px solid #febd68;
+        }
         /** box 4**/
         .payment{
             color: white;
@@ -87,14 +89,13 @@
 
         /**hero section*/
         .hero-section{
-            height: 500px;
+            height: 600px;
             width: 100%;
             background-color: rgb(215, 208, 221);
             font-size: 20px;
             display: flex;
             flex-direction: column;
-            /* justify-content:center;
-            align-items: center; */
+           
             }
         .box{
             display: flex;
@@ -108,46 +109,45 @@
         }
 
         /**hero content**/ 
-        .hero-content {
-            height: 450px;
-            width: 400px;
-            border: 3px solid black;
-            border-radius: 10%;
-            background-color: rgb(117, 122, 122);
-            display: flex;
-            /* flex-direction: row;
-            justify-content: center;
-            background-image: url;
-            align-items: center; */
-            position:absolute;
-            right: 100px;
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
-            
-
-        }
-        .hero-registor{
-            background-color: pink;
-            height: 100px;
-            width: 100px;
-            position: absolute;
-            top: 10px;
-        }
+        
+         
         .hero-content1{
-            height: 450px;
-            width: 400px;
+            height: 500px;
+            width: 420px;
             border: 3px solid black;
             border-radius: 10%;
             background-color: rgb(117, 122, 122);
             display: flex;
             position:absolute;
             left: 350px;
-            margin-top: 20px;
+            margin-top: 30px;
             display: flex;
+            justify-content: center;
+        }
+        .hero-content2{
+            height: 500px;
+            width: 420px;
+            border: 3px solid black;
+            border-radius: 10%;
+            background-color: rgb(117, 122, 122);
+            display: flex;
+            position:absolute;
+            right: 100px;
+            margin-top: 30px;
+            display: block;
             justify-content: center;
 
         }
+        select{
+            font-size: 18px;
+        }
+        .hero-content1 input{
+            font-size: 17px;
+        }
+        .hero-content2 input{
+            font-size: 20px;
+        }
+        
         .foot-panel1{
                 height: 100px;
                 width: 100%;
@@ -195,7 +195,7 @@
     </header>
     <div class="hero-section">
         <a href="new-candidate.html" class="box">New Candidate</a>
-        <a href="course-reg.html" class="box"> Course Registration</a>
+        <a href="courseReg.html" class="box"> Course Registration</a>
         <a href="club-membership.html" class="box">Club Membership</a>
         <a href="class-reg.html" class="box"> Class Registration</a>
         <a href="collage-reg.html" class="box"> Collage Registration</a>
@@ -206,18 +206,26 @@
         <a href="student-enroll.html" class="box ">Student Enrollement </a>
         
     
-        <div class="hero-content">
-            <form action="/action.php This page is  not found "></form>
-            <h3 style="text-align: center; "> Sing-in/Log-in</h3>
-            <!-- <div class="hero-registor">
-                box1
-            </div> -->
-        </div>
+        <div class="hero-content2">
+            <form action="/action.php This page is  not found ">
+                <h2 style="text-align: center; "> Sing-in/Log-in</h2> 
+                <h4 style="margin-left: 25px;">Enter Username</h4>
+            <input type="text" placeholder="Email/Username" class="pass" style="margin-left: 25px; height: 25px;" > <br> 
+            <h4 style="margin-left: 25px;">Enter password</h4>
+             <input type="password" placeholder="Password" class="pass" style="margin-left: 25px; height: 25px;"> <br> <br>
+        <label for="101">
+            <input type="checkbox" value="Remember me" class="rem"style="margin-left: 25px;"> Remember me 
+        </label> 
+            <a href="" style="margin-left: 25px; color: black;"  class="rem">Forgot Password?</a> <br><br>
+            <input type="submit" value="Log-in" style="height: 45px; width: 300px; text-align: center; background-color: #0f1111; color: #f3f3f3; margin-left: 50px; font-size: 20px ; border-radius: 10%;"  > <br><br>
+            <a href="" style="color: black; text-align: center; margin-left: 70px;"> Don't have an account ? Register </a>
+        </form>
+    </div>
         <div class="hero-content1">
                 <form action="/action.php This page is  not found ">  <!-- Action attributes is used to define what action need to be performed when a form is submited -->
-                        <h3 style="text-align: center; "> Register</h3>
-                        <input type="text"placeholder = " User Name "> 
-                        <input type="password" placeholder="password"> 
+                        <h2 style="text-align: center; "> Register</h2>
+                        <input type="text"placeholder = " User Name " style="height: 25px;"> 
+                        <input type="password" placeholder="password" style="height: 25px;"> 
                         <h4>Choose your class </h4>
                     <label for="101">
                         <input type="radio" value="Class XI" name="Class" id = " 101">Class XI 
@@ -240,7 +248,8 @@
                     </label>
                     <br><br>
                     Select your city 
-                    <select name="city ">
+                    <select name="city " style="height: 25px;">
+                        <option value="placeholder" style="font-size: 18px;"> city </option>
                         <option value="Delhi ">Delhi </option>
                         <option value="Banglore "> Banglore </option>
                         <option value="Pune ">Pune </option>
@@ -252,7 +261,9 @@
                         <option value="other city">Other City </option>
                     </select> 
                     <br><br>
-                    <input type="submit" value="submit">
+                    <input type="submit" value="Register" style="height: 40px; width: 300px; text-align: center; background-color: #0f1111; color: #f3f3f3; margin-left: 10px; font-size: 20px ; border-radius: 10%;"  > <br> <br>
+                    <!-- <input type="submit" value="submit" style="height: 25px;"> -->
+                    <a href="" style="color: black; text-align: center; margin-left: 30px;"> Already have an account? Log-in </a>
                       
      </form> 
         </div>
